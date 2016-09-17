@@ -26,7 +26,7 @@ cache_build() {
 }
 
 install_binaries() {
-  # node_modules should already be on the path
+  npm install elm -g
   cd "$BUILD_DIR" && elm-package install -y | indent
 }
 
